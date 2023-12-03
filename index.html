@@ -1,0 +1,327 @@
+<html>
+    <head>
+        <title>Scaler</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+            
+            *{
+                
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins' , sans-serif;
+            }
+            body{
+                background: white;
+                min-height: 100vh;
+                overflow-x: hidden;
+            }
+            header{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 30px 100px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                z-index: 100;
+            }
+            .icon{
+                font-size: 2em;
+                color: blue;
+                pointer-events: none;
+                margin-right: 260px;
+                /* logo == icon;
+                navigation=menu */
+            }  
+            .menu a{
+                /* display: flex;
+                justify-content: center; */
+                text-decoration: none;
+                color: darkolivegreen;
+                padding: 6px 15px;
+                border-radius: 20px;
+                margin: 0 10px;
+                font-weight: 600;
+                /* margin-left: 20px; */
+            }
+            .menu a:hover, 
+            .menu a.href{
+                background-color: aquamarine;
+                color: white;
+            }
+            
+            
+            .bodys{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                position: relative;
+            }
+            
+            #text{
+                font-size: 5em;
+                color:  white;
+                /* display: flex; */
+                /* justify-content: center;
+                 */
+                position: absolute;
+                text-shadow: 2px 2px 4px rgba(0,0,0, 0);
+                }
+            .bodys img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                pointer-events: none;
+            
+            
+            }
+            
+            .bodys2{
+                position: relative;
+                background-color: #003329;
+                padding: 120px;
+            
+            }
+            .bodys2 h1{
+                font-size: 4em;
+                color: white;
+                margin-bottom: 8px;
+            }
+            
+            
+            .bodys2 p{
+                font-size: 2em;
+                color: white;
+            
+            }
+            /* .body3{
+                font-size: large;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #003329;
+            }
+
+            .heading{
+                margin-left: 40%;
+            }
+            .programs{
+                background-color: rgb(240, 240, 240);
+                height: 800px;
+                width: 800px;
+            }
+            .container{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .program-card{
+                width: 25em;
+                height: 40em;
+                background-color: rgb(250, 250, 250);
+            }
+            .Software_Development{
+                padding: 1.5em;
+                margin-right: 2em;
+                display: flex;
+                background-color: rgb(39, 32, 189);
+                color: white;
+            }
+            .DSML{
+                padding: 1.5em;
+                margin-right: 2em;
+                display: flex;
+                background-color: rgb(117, 113, 249);
+                color: white;
+            } 
+            .MDP{
+                padding: 1.5em;
+                margin-right: 2em;
+                display: flex;
+                background-color: rgb(57, 211, 124);
+                color: white;
+            } 
+ */
+
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <h1 class="icon">Scaler</h1>
+            <div class="menu">
+                <a href="#o1" class="href">Home</a>
+                <a href="#o2">Introduction</a>
+                <a href="#o3">Campus</a>
+                <a href="#o4">FAQs</a>
+            </div>
+        </header>
+
+        <div class="bodys">
+        
+            <img src="hill1 (1).png" id="hill1">
+            <img src="hill2.png" id="hill2">
+            <img src="hill3.png" id="hill3">
+            <img src="hill4.png" id="hill4">
+            <img src="hill5.png" id="hill5">
+            <img src="tree.png" id="tree">
+            <h1 id="text">Scaler School of Technology</h1>
+                <img src="leaf.png" id="leaf">
+                <img src="plant.png" id="plant">
+            
+        </div>
+
+        <div class="bodys2">
+            <h1>Scaler Circullum</h1>
+            <p>Low Level Design:This module is customised at learner level i.e. a learner can opt for this module at any point during the course post the completion of Data Structures & Algorithms module, once they have demonstrated their command on the concepts of Data Structures & Algorithms module.
+                <br><br>
+                Project:Only 1 Specialisation is allowed per learner. Recorded lectures for the other can be availed via Student Dashboard. At Least 1 Specialisation is mandatory for successful completion of the course.
+                <br><br>
+                Electives:A learner can do as many electives as they want, but only after completion of Core Curriculum.
+                <br><br>
+            </p>
+
+            <!-- <div class="body3">
+                <h1 class="heading">Programs we offer</h1>
+                <section class="programs">
+                    <div class="container">
+                        
+                        
+                        <div class="program-card" id="sd_card">
+                            <div class="program-header Software_Development">
+                                <span>Software Development</span>
+                                <img src="software-development-icon.svg" alt="sd-icon">
+                            </div>
+                            <div class="details-margin">
+                                <div class="upper-details">
+                                    <div class="experience">
+                                        <img src="blue-tick.svg" alt="tick_icon">
+                                        <span>2 Year of Coding Experience</span>
+                                    </div>
+                                    <div class="details">  
+                                        <span><b>Career Outcome</b></span>
+                                        <p>Full-stack Developer,Backend Developer</p>
+                                        <span><b>What You Will Learn</b></span>
+                                        <p>
+                                            Programming Constructs , Arithematic Problem Solving,<br>
+                                            CSA Fundamentals, DS with fundamentals, Object-<br>
+                                            Oriented Design,System Design (HLD & LLD), <br>
+                                            Introduction to MVC , Web Architecture , HTML , CSS,<br>
+                                            JavaScript, Node JS, BAckend Architecture, MongoDB,<br>
+                                            React/Redux, BIgData,Clod Technologies,SQL,Data<br>
+                                            Warehousing & Modelling,Data Lakes, Hadoop, Spark,<br>
+                                            Workflow Orchestration, Streaming Pipeline Systems<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="lower-details">
+                                    <div class="outcomes">
+                                        <img src="star-icon.svg" alt="">
+                                        <span>1 Capstone Project</span>
+                                    </div>
+                                    <div class="learn-more">
+                                        <span>Learn More</span>
+                                        <img src="phone-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="program-card" id="dsml_card">
+                            <div class="program-header DSML">
+                                <span>Data Science & Machine Learning</span>
+                                <img src="dsml_icon.svg" alt="desml_icon">
+                            </div>
+                            <div class="details-margin">
+                                <div class="upper-details">
+                                    <div class="experience">
+                                        <img src="blue-tick.svg" alt="tick_icon">
+                                        <span>1 Year of Python Experience</span>
+                                    </div>
+                                    <div class="details">
+                                        <span><b>Career Outcome</b></span>
+                                        <p>Full-stack Developer,Backend Developer</p>
+                                        <span><b>What You Will Learn</b></span>
+                                        <p>
+                                            Programming Constructs , Arithematic Problem Solving,<br>
+                                            CSA Fundamentals, DS with fundamentals, Object-<br>
+                                            Oriented Design,System Design (HLD & LLD), <br>
+                                            Introduction to MVC , Web Architecture , HTML , CSS,<br>
+                                            JavaScript, Node JS, BAckend Architecture, MongoDB,<br>
+                                            React/Redux, BIgData,Clod Technologies,SQL,Data<br>
+                                            Warehousing & Modelling,Data Lakes, Hadoop, Spark,<br>
+                                            Workflow Orchestration, Streaming Pipeline Systems<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="lower-details">
+                                    <div class="outcomes">
+                                        <img src="star-icon.svg" alt="">
+                                        <span>1 Capstone Project</span>
+                                    </div>
+                                    <div class="learn-more">
+                                        <span>Learn More</span>
+                                        <img src="phone-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="program-card" id="mdp_card">
+                            <div class="program-header MDP">
+                                <span>Master's Degree Program</span>
+                                <img src="mdp-icon.svg" alt="mdp_icon">
+                            </div>
+                            <div class="details-margin">
+                                <div class="upper-details">
+                                    <div class="experience">
+                                        <img src="blue-tick.svg" alt="tick_icon">
+                                        <span>Bachelor's Degree in Relevant Field</span>
+                                    </div>
+                                    <div class="details">
+                                        <span><b>Career Outcome</b></span>
+                                        <p>Full-stack Developer,Backend Developer</p>
+                                        <span><b>What You Will Learn</b></span>
+                                        <p>
+                                            Programming Constructs , Arithematic Problem Solving,<br>
+                                            CSA Fundamentals, DS with fundamentals, Object-<br>
+                                            Oriented Design,System Design (HLD & LLD), <br>
+                                            Introduction to MVC , Web Architecture , HTML , CSS,<br>
+                                            JavaScript, Node JS, BAckend Architecture, MongoDB,<br>
+                                            React/Redux, BIgData,Clod Technologies,SQL,Data<br>
+                                            Warehousing & Modelling,Data Lakes, Hadoop, Spark,<br>
+                                            Workflow Orchestration, Streaming Pipeline Systems<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="lower-details">
+                                    <div class="outcomes">
+                                        <img src="star-icon.svg" alt="">
+                                        <span>1 Capstone Project</span>
+                                    </div>
+                                    <div class="learn-more">
+                                        <span>Learn More</span>
+                                        <img src="phone-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+            -->
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
